@@ -18,6 +18,7 @@ function calculateWinner(squares) {
         return squares[a];
       }
     }
+    
     return null;
   }
 
@@ -61,7 +62,7 @@ export default class Board extends Component {
         }
     
         return (
-          <div className='text-center mt-5'>
+          <div >
             <div className="status">{status}</div>
             <div >
               {this.renderSquare(0)}
